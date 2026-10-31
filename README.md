@@ -80,7 +80,7 @@ StrandedAlienDawn_Turkish/
 
 ---
 
-## ✨ Emeği Geçenler & Teşekkürler
+## ✨ Emeği Geçenler
 
 * **Yerelleştirme & Kalite Güvence:** Uğur Şahin
 * **Yazı Tipi:** Noto Sans (Google Fonts)
