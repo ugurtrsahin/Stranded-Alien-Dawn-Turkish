@@ -1,0 +1,31 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python / Caches
+__pycache__/
+*.py[cod]
+.mypy_cache/
+
+# Development artifacts & logs
+backups/
+scratch/
+logs/
+dist/
+*.tmp
+
+# Development tools & intermediate files (Clean Mod Distribution)
+/main.py
+/tools/
+/config.json
+/glossary.json
+/memory.json
+/pyproject.toml
+/ToggleTurkishChars.py
+/docs/
+/rehber.md
+/Stranded_Alien_Dawn_Turkce_Lokalizasyon_Raporu.md
+/Game.csv
+/mod/

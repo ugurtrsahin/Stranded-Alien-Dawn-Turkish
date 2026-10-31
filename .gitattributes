@@ -1,0 +1,17 @@
+# Ensure strict LF for CSV and Lua mod files
+* text=auto eol=lf
+*.csv text eol=lf
+*.lua text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+# Windows batch files REQUIRE CRLF line endings
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary files
+*.ttf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.zip binary
