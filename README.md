@@ -3,7 +3,7 @@
 ![Stranded: Alien Dawn Türkçe Yama Ana Menü](screenshots/1_ana_menu.jpg)
 
 [![Yama Durumu](https://img.shields.io/badge/Yama_Durumu-%25100_Tamamland%C4%B1-brightgreen.svg)]()
-[![Sürüm](https://img.shields.io/badge/S%C3%BCr%C3%BCm-v1.0.0-blue.svg)]()
+[![Sürüm](https://img.shields.io/badge/S%C3%BCr%C3%BCm-v1.0.10-blue.svg)]()
 [![Yazı Tipi](https://img.shields.io/badge/Font_Deste%C4%9Fi-Noto_Sans-orange.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-Steam_%7C_Epic_Games_%7C_PC-purple.svg)]()
 
@@ -75,6 +75,7 @@ StrandedAlienDawn_Turkish/
 ├── metadata.lua                  # Mod tanıtım ve sürüm meta verileri
 ├── preview.png                   # Mod vitrin görseli
 ├── Kurulum.bat                   # Tek tıkla otomatik kurulum betiği
+├── BENIOKU.txt                   # Kurulum kılavuzu ve güncel sürüm notları (v1.0.10)
 └── README.md                     # Kurulum ve bilgilendirme kılavuzu
 ```
 

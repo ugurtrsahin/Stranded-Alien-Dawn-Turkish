@@ -1,0 +1,55 @@
+====================================================================
+       STRANDED: ALIEN DAWN - TÜRKÇE YERELLEŞTİRME YAMASI (v1.0.10)
+====================================================================
+
+Bu yama, Stranded: Alien Dawn oyunu için hazırlanmış %100 eksiksiz,
+lore uyumlu ve Noto Sans Türkçe karakter font desteğine sahip yerelleştirme modudur.
+
+Tüm ana oyun metinleri, DLC paketleri (Robots & Guardians vb.),
+hayatta kalma günlükleri, teknoloji ağaçları ve arayüz Türkçeleştirilmiştir.
+
+--------------------------------------------------------------------
+SÜRÜM NOTLARI (v1.0.10 - 10 Kasım 2026)
+--------------------------------------------------------------------
+- 15.495 Satırlık Game.csv İkinci Dalga Tam-Metin LQA & Tutarlılık Güncellemesi (438 Satır Düzeltildi):
+  * Menü, Arayüz ve Eşsesli Kelime Düzeltmeleri: 'APPLY' -> 'UYGULA' (Başvur), 'RATE / RATE UP / DOWN' -> 'DEĞERLENDİR / OLUMLU OYLA / OLUMSUZ OYLA' (Ücret/Oranı Artırın), 'IMPORT' -> 'İÇE AKTAR' (İthalat), 'CREDITS' -> 'EMEĞİ GEÇENLER' (Krediler), 'Master Volume' -> 'Ana Ses Düzeyi' (Ana Cilt), 'Author (desc)' -> 'Yazar (azalan)' (açıklama), 'HARD' -> 'ZOR' (Sert), 'Insane' -> 'Çılgın' (Deli), 'Pet' -> 'Sev', 'Slaughter' -> 'Kesim', 'Butcher' -> 'Doğra', 'Charge' -> 'Şarj', 'mine' (mayın) -> 'mayın' (kaz), 'Hearing Range' -> 'İşitme Mesafesi', 'Beholder' -> 'Elinde bulunduran'.
+  * Büyük Harf Türkçe Karakter & Çevrilmemiş Kalıntılar: Tüm 'KAZA İNİş', 'SEÇİLMİş', 'DEĞİŞİM GÜNLÜğÜ', 'DÜğMEYE BASIN', 'TEşEKKÜR', 'MÜşAVİR', 'MÜşTERİ', 'GÜVENLİğİ' hataları ile 'Nothing To Lose' ('Kaybedecek Bir şey Noth' -> 'Kaybedecek Bir Şey Yok'), '<em>Windows/Rooms/Orders/Camp/rotate</em>', 'L./R. back paw' ve 'infopanel' kalıntıları sıfırlandı.
+  * Kritik Öğretici, Teknoloji, Terim & Keşif Düzeltmeleri: 'Unpause the game' ('Oyunu duraklatın' ters anlam hatası -> 'Oyunu devam ettirin'), Depolama rafları ters yön hatası, 'Fullness -> Tokluk', 'Relaxation -> Rahatlama', 'Crash Landing -> Zorunlu İniş', 'Overlays -> Katmanlar', 'Cook stove -> Yemek ocağı', kalan 11 'exploding skarabei' hatası, 'Buttermelons -> Tereyağkavunları', 'Avuç içinde -> Palmiye üzerinde', 'param yetiyorsa' teknoloji çevirileri ile Keşif/Sohbet/Biyografi akıcılığı düzeltildi.
+
+--------------------------------------------------------------------
+KURULUM YÖNTEMLERİ
+--------------------------------------------------------------------
+
+YÖNTEM 1: OTOMATİK KURULUM (Önerilen)
+1. Zip içerisindeki tüm dosyaları bir klasöre çıkartın.
+2. "Kurulum.bat" dosyasına çift tıklayın.
+3. Dosyalar otomatik olarak oyunun mod dizinine yüklenecektir.
+
+YÖNTEM 2: MANUEL KURULUM
+1. Klavyenizden Win + R tuşlarına basarak "Çalıştır"ı açın.
+2. Açılan kutuya şu adresi yapıştırıp Enter'a basın:
+   %APPDATA%\Stranded - Alien Dawn\Mods
+3. Bu klasör içerisine "StrandedAlienDawn_Turkish" adında yeni bir klasör açın.
+4. İndirdiğiniz zip içindeki tüm dosya ve klasörleri bu klasöre kopyalayın:
+   - Fonts klasörü
+   - Localization klasörü
+   - items.lua
+   - metadata.lua
+   - preview.png
+
+--------------------------------------------------------------------
+OYUNDA AKTİFLEŞTİRME
+--------------------------------------------------------------------
+1. Oyunu başlatın.
+2. Ana menüden "Mod Manager" (Mod Yöneticisi) ekranına girin.
+3. "Stranded: Alien Dawn - Türkçe Yama v1.0.10" modunu bulun ve "Enable" butonuna basarak etkinleştirin.
+4. "Options" (Ayarlar) menüsünden oyun dilinin "English" (İngilizce) seçili olduğundan emin olun.
+   (Mod İngilizce dil dosyalarını Türkçe ile değiştirdiği için İngilizce seçildiğinde Türkçe açılır).
+
+--------------------------------------------------------------------
+EMEĞİ GEÇENLER & TEŞEKKÜRLER
+--------------------------------------------------------------------
+Yerelleştirme & Kalite Güvence: Uğur Şahin 
+Font Uyarlaması: Noto Sans (Google Fonts)
+İyi oyunlar dilerim!
+====================================================================

@@ -1,5 +1,5 @@
 @echo off
-setlocal
+setlocal enabledelayedexpansion
 title Stranded: Alien Dawn - Turkce Yama Kurulumu
 color 0B
 
@@ -11,6 +11,7 @@ echo  Mod dosyalari oyunun mod dizinine yukleniyor...
 echo.
 
 set "TARGET_DIR=%APPDATA%\Stranded - Alien Dawn\Mods\StrandedAlienDawn_Turkish"
+set "COPY_FAILED=0"
 
 echo [*] Hedef Dizin: "%TARGET_DIR%"
 echo [*] Klasor yapisi olusturuluyor...
@@ -20,14 +21,54 @@ if not exist "%TARGET_DIR%\Localization" mkdir "%TARGET_DIR%\Localization"
 
 echo [*] Dosyalar kopyalaniyor...
 
-copy /Y "%~dp0Fonts\NotoSans-Regular.ttf" "%TARGET_DIR%\Fonts\" >nul
-copy /Y "%~dp0Fonts\NotoSans-Bold.ttf" "%TARGET_DIR%\Fonts\" >nul
-copy /Y "%~dp0Localization\Game.csv" "%TARGET_DIR%\Localization\" >nul
-copy /Y "%~dp0items.lua" "%TARGET_DIR%\" >nul
-copy /Y "%~dp0metadata.lua" "%TARGET_DIR%\" >nul
-if exist "%~dp0preview.png" copy /Y "%~dp0preview.png" "%TARGET_DIR%\" >nul
+if exist "%~dp0Fonts\NotoSans-Regular.ttf" (
+    copy /Y "%~dp0Fonts\NotoSans-Regular.ttf" "%TARGET_DIR%\Fonts\" >nul
+    if errorlevel 1 set "COPY_FAILED=1"
+) else (
+    echo [!] UYARI: Fonts\NotoSans-Regular.ttf bulunamadi.
+    set "COPY_FAILED=1"
+)
 
-if %ERRORLEVEL% EQU 0 (
+if exist "%~dp0Fonts\NotoSans-Bold.ttf" (
+    copy /Y "%~dp0Fonts\NotoSans-Bold.ttf" "%TARGET_DIR%\Fonts\" >nul
+    if errorlevel 1 set "COPY_FAILED=1"
+) else (
+    echo [!] UYARI: Fonts\NotoSans-Bold.ttf bulunamadi.
+    set "COPY_FAILED=1"
+)
+
+if exist "%~dp0Localization\Game.csv" (
+    copy /Y "%~dp0Localization\Game.csv" "%TARGET_DIR%\Localization\" >nul
+    if errorlevel 1 set "COPY_FAILED=1"
+) else if exist "%~dp0Game.csv" (
+    copy /Y "%~dp0Game.csv" "%TARGET_DIR%\Localization\" >nul
+    if errorlevel 1 set "COPY_FAILED=1"
+) else (
+    echo [!] HATA: Game.csv yerellestirme dosyasi bulunamadi!
+    set "COPY_FAILED=1"
+)
+
+if exist "%~dp0items.lua" (
+    copy /Y "%~dp0items.lua" "%TARGET_DIR%\" >nul
+    if errorlevel 1 set "COPY_FAILED=1"
+) else (
+    echo [!] UYARI: items.lua bulunamadi.
+    set "COPY_FAILED=1"
+)
+
+if exist "%~dp0metadata.lua" (
+    copy /Y "%~dp0metadata.lua" "%TARGET_DIR%\" >nul
+    if errorlevel 1 set "COPY_FAILED=1"
+) else (
+    echo [!] UYARI: metadata.lua bulunamadi.
+    set "COPY_FAILED=1"
+)
+
+if exist "%~dp0preview.png" (
+    copy /Y "%~dp0preview.png" "%TARGET_DIR%\" >nul
+)
+
+if "!COPY_FAILED!"=="0" (
     echo.
     echo ====================================================================
     echo  [+] TEBRIKLER! TURKCE YAMA BASARIYLA YUKLENDI!
@@ -43,8 +84,10 @@ if %ERRORLEVEL% EQU 0 (
     echo ====================================================================
 ) else (
     echo.
-    echo [!] HATA: Dosyalar kopyalanirken bir sorun olustu!
-    echo     Lutfen oyunun kapali oldugundan emin olun ve tekrar deneyin.
+    echo ====================================================================
+    echo  [!] HATA: Dosyalar kopyalanirken bir veya daha fazla sorun olustu!
+    echo      Lutfen oyunun kapali oldugundan emin olun ve tekrar deneyin.
+    echo ====================================================================
 )
 
 echo.
