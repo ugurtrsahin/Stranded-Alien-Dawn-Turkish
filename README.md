@@ -79,11 +79,4 @@ StrandedAlienDawn_Turkish/
 └── README.md                     # Kurulum ve bilgilendirme kılavuzu
 ```
 
----
-
-## ✨ Emeği Geçenler
-
-* **Yerelleştirme & Kalite Güvence:** Uğur Şahin
-* **Yazı Tipi:** Noto Sans (Google Fonts)
-
 *İyi oyunlar dilerim!*
